@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Details</title>
+  <style>
+    /* Add basic styles for layout */
+  </style>
+</head>
+<body>
+  <div id="recipe-details"></div>
+  <script  src="recipes.js"></script>
+  
+  <script>
+    // Get the recipe ID from the URL
+    const params = new URLSearchParams(window.location.search);
+    const recipeId = parseInt(params.get('id'), 10);
+
+    // Find the recipe by ID
+    const recipe = recipes.find(r => r.id === recipeId);
+
+    // Display the recipe details
+    const detailsContainer = document.getElementById('recipe-details');
+    if (recipe) {
+      detailsContainer.innerHTML = `
+        <h1>${recipe.name}</h1>
+        <img src="${recipe.image}" alt="${recipe.name}">
+        <h3>${recipe.cooking_time}</h3>
+        <h2>Ingredients</h2>
+        <ul>${recipe.ingredients.map(ing => `<li>${ing}</li>`).join('')}</ul>
+        <h2>Method</h2>
+        <ul>${recipe.method.map(ing => `<li>${ing}</li>`).join('')}</ul>
+      `;
+    } else {
+      detailsContainer.innerHTML = "<h1>Recipe not found!</h1>";
+    }
+
+   
+  </script>
+</body>
+</html>
