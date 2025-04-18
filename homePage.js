@@ -1,18 +1,18 @@
 
         const breakfast = document.getElementById('breakfast');
         breakfast.addEventListener('click', () => {
-        window.open("file:///C:/Users/Anas%20Ali/Desktop/My%20Projects/Recipe%20Book%20Website/breakfast.html", "_self");
+        window.open("./breakfast.html", "_self");
         });
         
         const lunch = document.getElementById('lunch');
         lunch.addEventListener('click', () => {
-        window.open("file:///C:/Users/Anas%20Ali/Desktop/My%20Projects/Recipe%20Book%20Website/lunch.html", "_self");
+        window.open("./lunch.html", "_self");
         });
         
         
         const dinner = document.getElementById('dinner');
         dinner.addEventListener('click', () => {
-        window.open("file:///C:/Users/Anas%20Ali/Desktop/My%20Projects/Recipe%20Book%20Website/dinner.html", "_self");
+        window.open("./dinner.html", "_self");
         });
         
         const searching = document.getElementById("recipe-input");
