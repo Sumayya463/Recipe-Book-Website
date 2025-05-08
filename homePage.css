@@ -17,8 +17,8 @@ body{
    
     background-color: rgb(0, 0, 0);
     display: grid;
-    grid-template-columns: 200px 200px 200px 200px 200px 200px;
-    grid-template-rows:   192px 192px 192px ;
+    grid-template-columns: 210px 210px 210px 210px 210px 210px;
+    grid-template-rows:   200px 200px 200px ;
     row-gap:6px;
     column-gap: 6px;;
     
