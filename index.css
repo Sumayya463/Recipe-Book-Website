@@ -214,6 +214,41 @@
 
 
 
+@media screen and (max-width: 1024px) {
+    #bf-grid, #lunch-grid, #dinner-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #bf-nav h1, #lunch-nav h1, #dinner-nav h1 {
+        font-size: 32px;
+    }
+}
+
+/* Phones (<= 767px) */
+@media screen and (max-width: 767px) {
+    #bf-grid, #lunch-grid, #dinner-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #bf-nav, #lunch-nav, #dinner-nav {
+        height: auto;
+        padding: 10px;
+    }
+
+    #bf-nav h1, #lunch-nav h1, #dinner-nav h1 {
+        font-size: 24px;
+        text-align: center;
+        margin: auto;
+    }
+
+    [id^="box"] {
+        margin: 0 auto;
+    }
+}
+
+
+
+
 
 
 
