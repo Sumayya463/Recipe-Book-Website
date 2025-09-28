@@ -20,6 +20,7 @@
         const errorContainer = document.getElementById('error-message');
         
         const recipeMap = {
+            "pancakes":1,
             "shakshuka": 2,
             "chole bhature": 3,
             "croissant": 4,
@@ -86,10 +87,12 @@
                 window.location.href = `recipe.html?id=${recipeId}`;
             
             }else{
+               
                 errorContainer.textContent = 'Recipe not found. Please try another recipe.';
         errorContainer.style.color = 'white';
         errorContainer.style.backgroundColor = 'black';
-
+        errorContainer.style.display ="flex";
+        
             }
             // Clear any previous error
             
